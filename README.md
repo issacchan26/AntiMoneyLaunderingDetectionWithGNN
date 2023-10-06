@@ -33,8 +33,8 @@ The hyperparameters used in [train.py](train.py):
 epoch = 100  
 train_batch_size = 256  
 test_batch_size = 256  
-learning_rate=0.001  
-optimizer: Adam
+learning_rate=0.0001  
+optimizer: SGD
 
 ## Model Selection
 This repo is using Graph Attention Network as backbone model, the model can be changed in [model.py](model.py)
