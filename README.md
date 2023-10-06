@@ -31,7 +31,8 @@ Please note that [dataset.py](dataset.py) currently support single file processi
 Please change the path in line 8 to your local path, e.g. '/path/to/AntiMoneyLaunderingDetectionWithGNN/data'  
 The hyperparameters used in [train.py](train.py):  
 epoch = 100  
-train_batch_size = 128
+train_batch_size = 256  
+test_batch_size = 256  
 learning_rate=0.001  
 optimizer: Adam
 
