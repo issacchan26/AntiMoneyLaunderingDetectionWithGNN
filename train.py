@@ -20,14 +20,14 @@ data = split(data)
 train_loader = loader = NeighborLoader(
     data,
     num_neighbors=[30] * 2,
-    batch_size=128,
+    batch_size=256,
     input_nodes=data.train_mask,
 )
 
 test_loader = loader = NeighborLoader(
     data,
     num_neighbors=[30] * 2,
-    batch_size=1,
+    batch_size=256,
     input_nodes=data.val_mask,
 )
 
