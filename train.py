@@ -5,7 +5,7 @@ import torch_geometric.transforms as T
 from torch_geometric.loader import NeighborLoader
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-dataset = AMLtoGraph('/home/ping_linux/PycharmProjects/issac/aml/data')
+dataset = AMLtoGraph('/path/to/AntiMoneyLaunderingDetectionWithGNN/data')
 data = dataset[0]
 epoch = 100
 
