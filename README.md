@@ -37,3 +37,8 @@ optimizer: Adam
 
 ## Model Selection
 This repo is using Graph Attention Network as backbone model, the model can be changed in [model.py](model.py)
+
+## Reference 
+Some of the feature engineering of this repo are referenced to below papers, highly recommend to read:
+1. [Weber, M., Domeniconi, G., Chen, J., Weidele, D. K. I., Bellei, C., Robinson, T., & Leiserson, C. E. (2019). Anti-money laundering in bitcoin: Experimenting with graph convolutional networks for financial forensics. arXiv preprint arXiv:1908.02591.](https://arxiv.org/pdf/1908.02591.pdf)
+2. [Johannessen, F., & Jullum, M. (2023). Finding Money Launderers Using Heterogeneous Graph Neural Networks. arXiv preprint arXiv:2307.13499.](https://arxiv.org/pdf/2307.13499.pdf)
