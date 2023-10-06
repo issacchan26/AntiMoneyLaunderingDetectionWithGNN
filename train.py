@@ -12,7 +12,7 @@ epoch = 100
 model = GAT(in_channels=data.num_features, hidden_channels=16, out_channels=1, heads=8)
 model = model.to(device)
 criterion = torch.nn.BCELoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
 
 split = T.RandomNodeSplit(split='train_rest', num_val=0.1, num_test=0)
 data = split(data)
