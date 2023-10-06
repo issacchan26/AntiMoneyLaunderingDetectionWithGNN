@@ -25,7 +25,7 @@ Make sure the directories are created as below:
 
 ## Data Preprocessing
 All data preprocessing are done in [dataset.py](dataset.py), it used torch_geometric.data.InMemoryDataset as the dataset framework.  
-Please note that the [dataset.py](dataset.py) currently support single file processing.
+Please note that [dataset.py](dataset.py) currently support single file processing.
 
 ## Model Training
 Please change the path in line 8 to your local path, e.g. '/path/to/AntiMoneyLaunderingDetectionWithGNN/data'  
