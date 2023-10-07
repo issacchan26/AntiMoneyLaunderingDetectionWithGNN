@@ -48,13 +48,14 @@ for i in range(epoch):
         model.eval()
         acc = 0
         total = 0
-        for test_data in test_loader:
-            test_data.to(device)
-            pred = model(test_data.x, test_data.edge_index, test_data.edge_attr)
-            ground_truth = test_data.y
-            correct = (pred == ground_truth.unsqueeze(1)).sum().item()
-            total += len(ground_truth)
-            acc += correct
-        acc = acc/total
-        print('accuracy:', acc)
+        with torch.no_grad():
+            for test_data in test_loader:
+                test_data.to(device)
+                pred = model(test_data.x, test_data.edge_index, test_data.edge_attr)
+                ground_truth = test_data.y
+                correct = (pred == ground_truth.unsqueeze(1)).sum().item()
+                total += len(ground_truth)
+                acc += correct
+            acc = acc/total
+            print('accuracy:', acc)
 
