@@ -24,8 +24,8 @@ Make sure the directories are created as below:
 ```
 
 ## Data analysis and visualization
-This [Jupyter Notebook](anti-money-laundering-detection-with-gnn.ipynb) explains the feature engineering implemented in this repo.  
-It provides the data visualization and preprocessing pipeline, as well as dataset design details.
+This [Jupyter Notebook](anti-money-laundering-detection-with-gnn.ipynb) explains the feature engineering implemented and short summary in this repo.  
+It also provides the data visualization and preprocessing pipeline, as well as dataset design details.
 
 ## Data Preprocessing
 All data preprocessing are done in [dataset.py](dataset.py), it used torch_geometric.data.InMemoryDataset as the dataset framework.  
