@@ -23,6 +23,10 @@ Make sure the directories are created as below:
 └── train.py
 ```
 
+## Data analysis and visualization
+This [Jupyter Notebook](anti-money-laundering-detection-with-gnn.ipynb) explains the feature engineering implemented in this repo.  
+It provides the data visualization and preprocessing pipeline, as well as dataset design details.
+
 ## Data Preprocessing
 All data preprocessing are done in [dataset.py](dataset.py), it used torch_geometric.data.InMemoryDataset as the dataset framework.  
 Please note that [dataset.py](dataset.py) currently support single file processing.
