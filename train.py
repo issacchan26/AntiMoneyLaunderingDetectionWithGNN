@@ -17,14 +17,14 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
 split = T.RandomNodeSplit(split='train_rest', num_val=0.1, num_test=0)
 data = split(data)
 
-train_loader = loader = NeighborLoader(
+train_loader = NeighborLoader(
     data,
     num_neighbors=[30] * 2,
     batch_size=256,
     input_nodes=data.train_mask,
 )
 
-test_loader = loader = NeighborLoader(
+test_loader = NeighborLoader(
     data,
     num_neighbors=[30] * 2,
     batch_size=256,
